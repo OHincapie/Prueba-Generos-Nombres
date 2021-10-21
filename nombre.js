@@ -79,12 +79,12 @@ function btnValidarGenero() {
         let contador2 = 0;
         for (i = 0; i < 3; i++) {
             
-            //Si hay una o varias(maximo 3) una consonante al inicio se suma una unidad a contador2
+            //Si hay una consonante o varias(maximo 3) al inicio se suma una unidad a contador1
             let aux = nombre[i];
             if (consonantes.includes(aux)) {
                 contador1++;
             }
-            //Si hay una o varias(maximo 3) una consonante al final se suma una unidad a contador2
+            //Si hay una consonante o varias(maximo 3) al final se suma una unidad a contador2
             let aux2 = nombre.length - (i + 1);
             let nombreAux = nombre[aux2];
             if (consonantes.includes(nombreAux)) {
